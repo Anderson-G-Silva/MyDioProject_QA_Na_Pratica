@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10035</projectId>
+    <projectKey>SLS</projectKey>
+    <exportDate>2026-05-28 20:35:04 UTC</exportDate>
+    <folders>
+        <folder fullPath="Complemento cadastro/Cadastro endereços" index="0"/>
+        <folder fullPath="Complemento cadastro/Cadastro meios de pagamento" index="1"/>
+        <folder fullPath="Login/Acesso redes sociais" index="2"/>
+        <folder fullPath="Login/Login" index="3"/>
+        <folder fullPath="Login/Novos cadastros" index="0"/>
+        <folder fullPath="Login/Recuperação de senha" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="343605467" key="SLS-T7">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:10:34 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta]]></name>
+            <objective><![CDATA[Testar funcionalidade de criação de nova conta]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente está na tela de criação de nova conta]]></description>
+                        <expectedResult><![CDATA[Visualiza a tela com os campos de criação de nova conta]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Digita no campo username</p>]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo&nbsp;]]></expectedResult>
+                        <testData><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Maria_Souza</p>]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Aptos",sans-serif;' data-pasted="true">Digita no campo nome completo&nbsp;</p>]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo&nbsp;]]></expectedResult>
+                        <testData><![CDATA[<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Aptos",sans-serif;' data-pasted="true">Maria de Souza</p>]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo data de nascimento ou seleciona data no calendário]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo&nbsp;]]></expectedResult>
+                        <testData><![CDATA[&nbsp;01/01/2000]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Digita no campo CPF&nbsp;</p>]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo E-mail]]></expectedResult>
+                        <testData><![CDATA[<p style="margin-left:0cm;" data-pasted="true">12345678909</p>]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo E-mail&nbsp;]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo password]]></expectedResult>
+                        <testData><![CDATA[mariasouza@gmail.com]]></testData>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[digita no campo password&nbsp;]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo confirmar password]]></expectedResult>
+                        <testData><![CDATA[Ma@Sa$1599]]></testData>
+                    </step>
+                    <step index="7">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Digita no campo confirmar password&nbsp;</p>]]></description>
+                        <expectedResult><![CDATA[Habilita o botão Criar conta]]></expectedResult>
+                        <testData><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Ma@Sa$1599</p>]]></testData>
+                    </step>
+                    <step index="8">
+                        <customFields/>
+                        <description><![CDATA[Clica no botão criar conta&nbsp;]]></description>
+                        <expectedResult><![CDATA[o cliente recebe uma mensagem na tela informando que a conta foi criada com sucesso]]></expectedResult>
+                    </step>
+                    <step index="9">
+                        <customFields/>
+                        <description><![CDATA[Clica no botão criar conta&nbsp;]]></description>
+                        <expectedResult><![CDATA[Retorna para a tela inicial de login]]></expectedResult>
+                    </step>
+                    <step index="10">
+                        <customFields/>
+                        <description><![CDATA[Clica no botão criar conta&nbsp;]]></description>
+                        <expectedResult><![CDATA[Envia um e-mail para o endereço de e-mail cadastrado informando a confirmação de seu cadastro]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="343609343" key="SLS-T8">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:20:40 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta e informa CPF já cadastrado na base de clientes]]></name>
+            <objective><![CDATA[Testar funcionalidade de criação de nova conta]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# Language: pt
+Given que o cliente esteja na tela de criação de nova conta
+And digita no campo username Maria_Maria
+And digita no campo nome completo Maria de Souza
+And digita no campo data de nascimento 01/01/2000
+But digita no campo CPF 12345678909
+And digita no campo E-mail mariasouza@hotmail.com
+And digita no campo password Ma@Sa$1599
+And digita no campo confirmar password Ma@Sa$1599
+When clicar no botão criar conta
+Then o cliente recebe uma mensagem na tela informando que existe uma conta ativa com o mesmo CPF
+And retorna para a tela inicial de login.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343615207" key="SLS-T9">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:34:23 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta e informa CPF inválido]]></name>
+            <objective><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Testar funcionalidade de criação de nova conta</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# Language: pt
+Given que o cliente esteja na tela de criação de nova conta
+And digita no campo username Maria_Souza
+And digita no campo nome completo Maria de Souza
+And digita no campo data de nascimento 01/01/2000
+But digita no campo CPF 12345678919
+And digita no campo E-mail mariasouza@gmail.com
+And digita no campo password Ma@Sa$1599
+And digita no campo confirmar password Ma@Sa$1599
+When clicar no botão criar conta
+Then o cliente recebe uma mensagem na tela informando que o CPF é inválido.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343620351" key="SLS-T10">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:40:12 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta e informa senha que não atende as regras de criação de senha]]></name>
+            <objective><![CDATA[<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Aptos",sans-serif;' data-pasted="true">Testar funcionalidade de criação de nova conta</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# Language: pt
+Given que o cliente esteja na tela de criação de nova conta
+And digita no campo username Maria_Souza
+And digita no campo nome completo Maria de Souza
+And digita no campo data de nascimento 01/01/2000
+And digita no campo CPF 12345678909
+And digita no campo E-mail mariasouza@gmail.com
+But digita no campo password MaSa1599
+And digita no campo confirmar password MaSa1599
+When clicar no botão criar conta
+Then o cliente recebe uma mensagem na tela informando que a senha não atende aos requisitos solicitados para criação de senha.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343620589" key="SLS-T11">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:44:16 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta e o campo de confirmação de senha não confere com a primeira senha digitada]]></name>
+            <objective><![CDATA[<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Aptos",sans-serif;' data-pasted="true">Testar funcionalidade de criação de nova conta</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de criação de nova conta
+And digita no campo username Maria_Souza
+And digita no campo nome completo Maria de Souza
+And digita no campo data de nascimento 01/01/2000
+And digita no campo CPF 12345678909
+And digita no campo E-mail mariasouza@gmail.com
+And digita no campo password Ma@Sa$1599
+But digita no campo confirmar password Ma@Sa$1589
+When clicar no botão criar conta
+Then o cliente recebe uma mensagem na tela informando que a confirmação de senha não bate com a primeira senha digitada.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="344148487" key="SLS-T33">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 22:34:52 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta, mas a idade é inferior a 18 anos]]></name>
+            <objective><![CDATA[Testar funcionalidade de criação de nova conta]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de criação de nova conta
+And digita no campo username Maria_Souza
+And digita no campo nome completo Maria de Souza
+And digita no campo data de nascimento 01/01/2010
+And digita no campo CPF 12345678909
+And digita no campo E-mail mariasouza@gmail.com
+And digita no campo password Ma@Sa$1599
+But digita no campo confirmar password Ma@Sa$1599
+When clicar no botão criar conta
+Then o cliente recebe uma mensagem na tela informando que a idade é inferior a 18 anos e que não será possível realizar o cadastro
+And retorna para a tela inicial de login.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="344151400" key="SLS-T34">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 22:44:03 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Novos cadastros]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-5</key>
+                    <summary><![CDATA[Como usuário gostaria de  cadastrar uma nova conta na plataforma]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente preenche dados para criação de nova conta e informa caracteres numéricos ou caracteres especiais no campo nome completo]]></name>
+            <objective><![CDATA[Testar funcionalidade de criação de nova conta]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de criação de nova conta
+And digita no campo username Maria_Souza
+And digita no campo nome completo Maria de Souza9$
+And digita no campo data de nascimento 01/01/2000
+And digita no campo CPF 12345678909
+And digita no campo E-mail mariasouza@gmail.com
+And digita no campo password Ma@Sa$1599
+But digita no campo confirmar password Ma@Sa$1599
+When clicar no botão criar conta
+Then o cliente recebe uma mensagem na tela informando que o campo nome completo só aceita letras]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343622525" key="SLS-T12">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:51:35 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Recuperação de senha]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-6</key>
+                    <summary><![CDATA[Como usuário gostaria de recuperar senha de acesso]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente ativo recebe código de recuperação de senha enviado no e-mail cadastrado e digita nova senha que não atende as regras de criação de senha]]></name>
+            <objective><![CDATA[<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Aptos",sans-serif;' data-pasted="true">Testar a funcionalidade de recuperação de senha de acesso</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de recuperação de senha
+And digita o e-mail cadastrado mariasouza@gmail.com
+And recebe e-mail com código para recuperação de senha 123456
+And digita na tela de recuperação de senha o codigo 123456
+But digita no campo password MaSa15
+And digita no campo confirmar password MaSa15
+When clicar no botão salvar senha
+Then o cliente recebe uma mensagem na tela informando que a nova senha não atende aos requisitos solicitados para criação de senha]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343623095" key="SLS-T13">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:56:23 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Recuperação de senha]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-6</key>
+                    <summary><![CDATA[Como usuário gostaria de recuperar senha de acesso]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente ativo recebe código de recuperação de senha enviado no e-mail cadastrado e digita nova senha e no campo de confirmação de nova senha não confere com a primeira digitada]]></name>
+            <objective><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Testar a funcionalidade de recuperação de senha de acesso</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de recuperação de senha
+And digita o e-mail cadastrado mariasouza@gmail.com
+And recebe e-mail com código para recuperação de senha 123456
+And digita na tela de recuperação de senha o codigo 123456
+And digita no campo password Ma@Sa$1527
+But digita no campo confirmar password Ma@Sa$1517
+When clicar no botão salvar senha
+Then o cliente recebe uma mensagem na tela informando que a confirmação de nova senha não bate com a primeira digitada ]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343623162" key="SLS-T14">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:57:52 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Recuperação de senha]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-6</key>
+                    <summary><![CDATA[Como usuário gostaria de recuperar senha de acesso]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente ativo recebe código de recuperação de senha enviado no e-mail cadastrado e digita no campo da tela de recuperação de senha o código incorreto]]></name>
+            <objective><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Testar a funcionalidade de recuperação de senha de acesso</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de recuperação de senha
+And digita incorretamente o código de recuperação de senha
+When ao tentar avançar para o campo de senha
+Then o cliente recebe uma mensagem na tela informando que o código de recuperação de senha está incorreto]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343623175" key="SLS-T15">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 00:59:38 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Recuperação de senha]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-6</key>
+                    <summary><![CDATA[Como usuário gostaria de recuperar senha de acesso]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente ativo recebe código de recuperação de senha enviado no e-mail cadastrado e digita nova senha corretamente]]></name>
+            <objective><![CDATA[Testar a funcionalidade de recuperação de senha de acesso]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de recuperação de senha
+And digita o e-mail cadastrado mariasouza@gmail.com
+And recebe e-mail com código para recuperação de senha 123456
+And digita na tela de recuperação de senha o codigo 123456
+And digita no campo password Ma@Sa$1527
+And digita no campo confirmar password Ma@Sa$1527
+When clicar no botão salvar senha
+Then o cliente recebe uma mensagem na tela informando que a nova senha foi salva com sucesso]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343626490" key="SLS-T16">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:08:10 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Acesso redes sociais]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-9</key>
+                    <summary><![CDATA[Como usuário gostaria de fazer o login utilizando uma rede social]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro na rede social, mas não está conectado a ela no momento e tenta fazer login com a senha incorreta ]]></name>
+            <objective><![CDATA[Testar a funcionalidade de acesso a plataforma através de uma conta ativa em uma rede social&nbsp;]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de interface de login da rede social
+And tenha cadastro no sistema da rede social
+And não está conectado a conta da rede social no momento
+And digita no campo usuário o e-mail mariasouza@gmail.com
+But digita no campo senha senhaincorreta
+When clicar no botão login
+Then o cliente recebe uma mensagem de senha incorreta]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343626971" key="SLS-T17">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:09:49 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Acesso redes sociais]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-9</key>
+                    <summary><![CDATA[Como usuário gostaria de fazer o login utilizando uma rede social]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro na rede social, mas não está conectado a ela no momento e tenta fazer login com a senha correta ]]></name>
+            <objective><![CDATA[Testar a funcionalidade de acesso a plataforma através de uma conta ativa em uma rede social]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# Language: pt
+Given que o cliente esteja na tela de interface de login da rede social
+And tenha cadastro no sistema da rede social
+And não está conectado a conta da rede social no momento
+And digita no campo usuário o e-mail mariasouza@gmail.com
+And digita no campo senha senhacorreta
+When clicar no botão login
+Then o cliente é direcionado para a homepage da plataforma de compras]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343627043" key="SLS-T18">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:13:42 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Acesso redes sociais]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-9</key>
+                    <summary><![CDATA[Como usuário gostaria de fazer o login utilizando uma rede social]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro na rede social e está conectado a ela no momento ]]></name>
+            <objective><![CDATA[Testar a funcionalidade de acesso a plataforma através de uma conta ativa em uma rede social]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# Language: pt
+Given que o cliente esteja na tela de interface de login da rede social
+And tenha cadastro no sistema da rede social
+And está conectado a conta da rede social no momento
+When clicar no botão continuar como Maria de Souza
+Then o cliente é direcionado para a homepage da plataforma de compras]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343627134" key="SLS-T19">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:15:51 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Acesso redes sociais]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-9</key>
+                    <summary><![CDATA[Como usuário gostaria de fazer o login utilizando uma rede social]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro na rede social e está conectado a ela no momento, mas não quer continuar com o acesso ]]></name>
+            <objective><![CDATA[Testar a funcionalidade de acesso a plataforma através de uma conta ativa em uma rede social]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de interface de login da rede social
+And tenha cadastro no sistema da rede social
+And está conectado a conta da rede social no momento
+When clicar no botão cancelar
+Then o cliente  é direcionado para a tela anterior de acesso de login, criação de usuário e recuperação de senha]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343180324" key="SLS-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-25 22:00:51 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Login]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-4</key>
+                    <summary><![CDATA[Como usuário gostaria de acessar a página da plataforma da loja virtual com objetivo de visualizar as opções de login disponíveis, cadastro de nova conta e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro tenta fazer login]]></name>
+            <objective><![CDATA[Verificar funcionalidade de login]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de login na URL https://www.saucedemo.com/
+And digita no campo username Maria_Souza
+And digita no campo password a senha Ma@Sa$1599
+When clicar no botão login
+Then o cliente recebe uma mensagem na tela informando que a conta não existe 
+And uma mensagem orientando a criar uma nova conta]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343181655" key="SLS-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-25 22:28:46 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Login]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-4</key>
+                    <summary><![CDATA[Como usuário gostaria de acessar a página da plataforma da loja virtual com objetivo de visualizar as opções de login disponíveis, cadastro de nova conta e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro deseja criar uma conta]]></name>
+            <objective><![CDATA[Verificar direcionamento para a tela de cadastro de nova conta]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente acessa URL&nbsp;<span style='color: rgb(41, 42, 46); font-family: "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; background-color: rgba(5, 21, 36, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;' data-pasted="true">https://www.saucedemo.com/</span>]]></description>
+                        <expectedResult><![CDATA[Acessa tela de login a plataforma]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Clica no botão de Criar nova conta]]></description>
+                        <expectedResult><![CDATA[<span style='color: rgb(41, 42, 46); font-family: "Atlassian Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; background-color: rgba(5, 21, 36, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;' data-pasted="true">&nbsp;o cliente é direcionado para a tela de cadastro de nova conta</span>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="343181909" key="SLS-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-25 22:37:28 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Login]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-4</key>
+                    <summary><![CDATA[Como usuário gostaria de acessar a página da plataforma da loja virtual com objetivo de visualizar as opções de login disponíveis, cadastro de nova conta e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro e tenta fazer login com a senha incorreta]]></name>
+            <objective><![CDATA[Testar acesso a plataforma com senha incorreta]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente acessa tela de login na URL https://www.saucedemo.com/]]></description>
+                        <expectedResult><![CDATA[Acessa tela de login a plataforma]]></expectedResult>
+                        <testData><![CDATA[https://www.saucedemo.com/]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[<p data-local-id="4a13552faafc" data-prosemirror-content-type="node" data-prosemirror-node-name="paragraph" data-prosemirror-node-block="true" data-pm-slice="1 1 []" data-pasted="true">&nbsp;digita no campo&nbsp;<em data-prosemirror-content-type="mark" data-prosemirror-mark-name="em">username&nbsp;</em></p>]]></description>
+                        <expectedResult><![CDATA[Habilita o campo de <em>password</em>]]></expectedResult>
+                        <testData><![CDATA[Maria_Souza]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[digita no campo<em>&nbsp;password</em>]]></description>
+                        <expectedResult><![CDATA[<p data-local-id="4b7344e1604a" data-prosemirror-content-type="node" data-prosemirror-node-name="paragraph" data-prosemirror-node-block="true" data-pm-slice="1 1 []" data-pasted="true">o cliente recebe uma mensagem de senha incorreta</p>]]></expectedResult>
+                        <testData><![CDATA[Ma@Sa$15]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="343182846" key="SLS-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-25 22:46:49 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Login]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-4</key>
+                    <summary><![CDATA[Como usuário gostaria de acessar a página da plataforma da loja virtual com objetivo de visualizar as opções de login disponíveis, cadastro de nova conta e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro mas esqueceu a senha e tenta recuperá-la]]></name>
+            <objective><![CDATA[Testar funcionalidade de acesso a recuperação de senha]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+
+Given que o cliente esteja na tela de login na URL https://www.saucedemo.com/
+And  digita no campo username Maria_Souza
+But não lembra da senha
+When clica no link de recuperar senha
+Then o cliente é direcionado para a tela de recuperação de senha]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343183006" key="SLS-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-25 22:54:14 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Login]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-4</key>
+                    <summary><![CDATA[Como usuário gostaria de acessar a página da plataforma da loja virtual com objetivo de visualizar as opções de login disponíveis, cadastro de nova conta e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro e tenta fazer login com a senha correta]]></name>
+            <objective><![CDATA[Testar acesso com as credenciais corretas]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de login na URL https://www.saucedemo.com/
+And digita no campo username Maria_Souza
+And no campo password digita a senha Ma@Sa$1599
+When clica no botão login
+Then o cliente  é direcionado para a homepage da plataforma de compras]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343183059" key="SLS-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-25 22:58:50 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login/Login]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-4</key>
+                    <summary><![CDATA[Como usuário gostaria de acessar a página da plataforma da loja virtual com objetivo de visualizar as opções de login disponíveis, cadastro de nova conta e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente tem cadastro e tenta fazer login utilizando uma rede social]]></name>
+            <objective><![CDATA[Testar funcionalidade de acesso através de uma rede social]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de login na URL https://www.saucedemo.com/
+And  tenha cadastro no sistema de uma das redes sociais
+When clicar no logotipo da rede social Facebook
+Then o cliente  é direcionado para a tela de acesso da rede social Facebook]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343630526" key="SLS-T20">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:35:09 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro endereços]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-7</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir meus endereços]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo endereço ou no link alterar e é direcionado para a tela e preenche dados para criação de novo endereço ou alteração com CEP inválido]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de endereços do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de endereços
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de endereço
+And digita no campo nome do endereço Casa
+And digita no campo CEP 03000000
+When finalizar consulta da API
+Then o cliente recebe uma mensagem na tela informando que o CEP não existe
+Examples: | ação | | botão novo endereço | | link alterar de um endereço cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343630781" key="SLS-T21">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:41:40 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro endereços]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-7</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir meus endereços]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo endereço ou no link alterar e é direcionado para a tela e preenche dados para criação de novo endereço ou alteração e digita no campo CEP caracteres alfabéticos ou caracteres especiais]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de endereços do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de endereços
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de endereço
+And digita no campo nome do endereço Casa
+And digita no campo CEP A3$00000
+When tenta avançar na pesquisa do CEP
+Then o cliente recebe uma mensagem na tela informando que o campo CEP só aceita caracteres numéricos de 0 a 9
+Examples: | ação | | botão novo endereço | | link alterar de um endereço cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343631279" key="SLS-T22">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:46:23 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro endereços]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-7</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir meus endereços]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo endereço ou no link alterar é direcionado para a tela e preenche dados para criação de novo endereço ou alteração com CEP válido, mas digita letras ou caracteres especiais no campo número]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de endereços do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de endereços
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de endereço
+And digita no campo nome do endereço Casa
+And digita no campo CEP 03104000
+But digita no campo número 905A$
+When clicar no botão salvar endereço
+Then o cliente recebe uma mensagem na tela informando que no campo destacado em vermelho só são permitidos números de 0 a 9
+Examples: | ação | | botão novo endereço | | link alterar de um endereço cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343631292" key="SLS-T23">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:48:08 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro endereços]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-7</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir meus endereços]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo endereço ou no link alterar é direcionado para a tela e  preenche dados para criação de novo endereço ou alteração com CEP e demais informações válidas]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de endereços do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Cliente está na tela de cadastro de endereços</p>]]></description>
+                        <expectedResult><![CDATA[Visualizar a tela com as opções de ações da tela de endereços cadastrados]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Seleciona opção de ação botão novo endereço]]></description>
+                        <expectedResult><![CDATA[Visualiza a tela para edição ou cadastro de novo endereço]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo nome do endereço]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo pesquisa do CEP]]></expectedResult>
+                        <testData><![CDATA[Casa]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo CEP&nbsp;]]></description>
+                        <expectedResult><![CDATA[Carrega via API os dados dos campos CEP, endereço, bairro, município e UF]]></expectedResult>
+                        <testData><![CDATA[<p style="margin-left:0cm;" data-pasted="true">03104000</p>]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo número&nbsp;]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo complemento]]></expectedResult>
+                        <testData><![CDATA[2148]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo complemento&nbsp;]]></description>
+                        <expectedResult><![CDATA[Habilita o botão&nbsp;]]></expectedResult>
+                        <testData><![CDATA[Apt 105]]></testData>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Clica no botão salvar endereço</p>]]></description>
+                        <expectedResult><![CDATA[Recebe uma mensagem na tela informando que o endereço foi cadastrado com sucesso]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="343631341" key="SLS-T24">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:50:29 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro endereços]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-7</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir meus endereços]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no link excluir é direcionado para a tela de exclusão de endereço, mas cancela o processo.]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de endereços do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de endereços
+And clica no link excluir do endereço Casa
+And é direcionado para a tela de exclusão de endereços
+When clicar no botão cancelar exclusão
+Then o cliente recebe uma mensagem na tela informando que a exclusão não foi concluída
+And retorna a tela inicial de endereços]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343631710" key="SLS-T25">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 01:52:07 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro endereços]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-7</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir meus endereços]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no link excluir é direcionado para a tela de exclusão de endereço e conclui o processo]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de endereços do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de endereços
+And clica no link excluir do endereço Casa
+And é direcionado para a tela de exclusão de endereços
+When clicar no botão confirmar exclusão
+Then o cliente recebe uma mensagem na tela informando que a exclusão foi concluída com sucesso
+And retorna a tela inicial de endereços]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343634090" key="SLS-T26">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:03:52 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo meio de pagamento ou no link alterar, é direcionado para a tela de preenchimento de dados para criação de novo meio de pagamento ou alteração e informa caracteres alfabéticos ou caracteres especiais no campo número do cartão]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de meios de pagamento
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de meios de pagamento
+And digita no campo número do cartão 5031 4332 1540 A$51
+When tenta passar para o próximo campo
+Then o cliente recebe uma mensagem na tela informando que no campo destacado em vermelho só são permitidos números de 0 a 9
+Examples: | ação | | botão novo meio de pagamento | | link alterar de um meio de pagamento cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343634192" key="SLS-T27">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:06:13 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo meio de pagamento ou no link alterar, é direcionado para a tela de preenchimento de dados para criação de novo meio de pagamento ou alteração e informa um número do cartão inválido]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de meios de pagamento
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de meios de pagamento
+And digita no campo número do cartão 4242 4242 4242 4241
+When tenta passar para o próximo campo
+Then o cliente recebe uma mensagem na tela informando que o número do cartão é inválido
+Examples: | ação | | botão novo meio de pagamento | | link alterar de um meio de pagamento cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343634290" key="SLS-T28">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:08:10 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo meio de pagamento ou no link alterar, é direcionado para a tela de preenchimento de dados para criação de novo meio de pagamento ou alteração e informa caracteres numéricos ou caracteres especiais no campo nome no cartão]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de meios de pagamento
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de meios de pagamento
+And digita no campo número do cartão 5031 4332 1540 6351
+And digita no campo nome no cartão Maria de Sousa9$ 
+When tenta passar para o próximo campo
+Then o cliente recebe uma mensagem na tela informando que no campo destacado em vermelho não aceita caracteres numéricos ou caracteres especiais
+Examples: | ação | | botão novo meio de pagamento | | link alterar de um meio de pagamento cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343635210" key="SLS-T29">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:10:53 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo meio de pagamento ou no link alterar, é direcionado para a tela de preenchimento de dados para criação de novo meio de pagamento ou alteração e informa caracteres alfabéticos ou caracteres especiais no campo CVV]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de meios de pagamento
+And seleciona opção de ação “<ação>”
+And é direcionado para a tela de alteração ou criação de meios de pagamento
+And digita no campo número do cartão 5031 4332 1540 6351
+And digita no campo nome no cartão Maria de Souza 
+And digita no campo CVV 1A$
+When tenta passar para o próximo campo
+Then o cliente recebe uma mensagem na tela informando que no campo destacado em vermelho só são permitidos números de 0 a 9
+Examples: | ação | | botão novo meio de pagamento | | link alterar de um meio de pagamento cadastrado |]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343635338" key="SLS-T30">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:13:10 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no botão novo meio de pagamento ou no link alterar, é direcionado para a tela de preenchimento de dados para criação de novo meio de pagamento ou alteração e informa todos os dados válidos]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Cliente está na tela de cadastro de meios de pagamento</p>]]></description>
+                        <expectedResult><![CDATA[Visualizar a tela com as opções de ações da tela meios de pagamento]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Seleciona opção de ação botão novo novo meio de pagamento]]></description>
+                        <expectedResult><![CDATA[Visualiza a tela para edição ou cadastro de novo meio de pagamento]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Digita no campo número do cartão&nbsp;</p>]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo nome no cartão]]></expectedResult>
+                        <testData><![CDATA[<p style="margin-left:0cm;" data-pasted="true">5031 4332 1540 6351</p>]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Digita no campo nome no cartão&nbsp;]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo CVV]]></expectedResult>
+                        <testData><![CDATA[Maria de Souza]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Digita no campo CVV</p>]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo mês de expiração]]></expectedResult>
+                        <testData><![CDATA[123]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Seleciona no campo mês de expiração]]></description>
+                        <testData><![CDATA[11]]></testData>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[Seleciona no campo ano de expiração]]></description>
+                        <expectedResult><![CDATA[Habilita/Passa para o campo tipo de meio de pagamento]]></expectedResult>
+                        <testData><![CDATA[2030]]></testData>
+                    </step>
+                    <step index="7">
+                        <customFields/>
+                        <description><![CDATA[Seleciona tipo de meio de pagamento&nbsp;]]></description>
+                        <expectedResult><![CDATA[Habilita o botão salvar meio de pagamento]]></expectedResult>
+                        <testData><![CDATA[Crédito]]></testData>
+                    </step>
+                    <step index="8">
+                        <customFields/>
+                        <description><![CDATA[<p style="margin-left:0cm;" data-pasted="true">Clicar no botão salvar meio de pagamento</p>]]></description>
+                        <expectedResult><![CDATA[O cliente recebe uma mensagem na tela informando que o meio de pagamento foi cadastrado com sucesso]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="343635463" key="SLS-T31">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:15:18 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no link excluir é direcionado para a tela de exclusão de meios de pagamento, mas cancela o processo.]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de meios de pagamento
+And clica no link excluir de um meio de pagamento cadastrado
+And é direcionado para a tela de excusão de meios de pagamento
+And seleciona o cartão nomeado Mastercard-Crédito
+When clicar no botão cancelar exclusão
+Then o cliente recebe uma mensagem na tela informando que a exclusão não foi concluída
+And retorna a tela inicial de meios de pagamento]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="343635605" key="SLS-T32">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Anderson Gomes da Silva</createdBy>
+            <createdOn>2026-05-27 02:16:47 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Complemento cadastro/Cadastro meios de pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SLS-8</key>
+                    <summary><![CDATA[Como usuário gostaria de cadastrar, editar ou excluir minhas opções de meio de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente clica no link excluir é direcionado para a tela de exclusão de meios de pagamento e conclui o processo]]></name>
+            <objective><![CDATA[<p style="margin-left:36.0pt;" data-pasted="true">Testar a funcionalidade de cadastro, edição e exclusão de meios de pagamento do cliente</p>]]></objective>
+            <owner>712020:208a4d9d-3afd-43e8-bc5b-34d197b5015e</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[# language: pt
+Given que o cliente esteja na tela de cadastro de meios de pagamento
+And clica no link excluir de um meio de pagamento cadastrado
+And é direcionado para a tela de excusão de meios de pagamento
+And seleciona o cartão nomeado Mastercard-Crédito
+When clicar no botão confirmar exclusão
+Then o cliente recebe uma mensagem na tela informando que a exclusão foi concluída com sucesso
+And retorna a tela inicial de meios de pagamento]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
